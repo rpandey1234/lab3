@@ -22,8 +22,9 @@ function initializePage() {
 
 function updateProject(e) {
 	 var projectID = $('#project').val();
-	 $(projectID).animate({
-	    width: $('#width').val()
+	 console.log($('#color').val());
+	 $(projectID).css({
+	    backgroundColor: $('#color').val()
 	 });
 
 	 var newText = $('#description').val();
@@ -40,4 +41,6 @@ function projectClick(e) {
   console.log(projectTitle);
   var jumbotronHeader = $(".jumbotron h1");
   jumbotronHeader.text(projectTitle);
+  $(this).append("<h6>" + projectTitle + "</h6>");
 }
+

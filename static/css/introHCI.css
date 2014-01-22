@@ -39,8 +39,16 @@ body {
 
 .project a {
      text-align: center;
+     width: 300px;
 }
 
+.project {     
+     padding: 10px;
+}
 .jumbotron p.active {
      color: #1f6ddd;
+}
+
+table.main tr td {
+     padding: 15px;
 }
